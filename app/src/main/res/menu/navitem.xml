@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/nav1"
+        >
+        <item
+            android:id="@+id/optprofile"
+            android:title="Profile"
+
+            />
+
+        <item
+            android:id="@+id/opthome"
+            android:title="Home"
+
+            />
+
+        <item
+            android:id="@+id/opttips"
+            android:title="Contract Management"
+
+            />
+        <item
+            android:id="@+id/optservice"
+            android:title="Services"
+
+            />
+        <item
+            android:id="@+id/optshare"
+            android:title="Invite your freinds"
+
+            />
+    </group>
+    <group
+        android:id="@+id/nav2"
+
+        android:gravity="bottom">
+
+        <item
+            android:id="@+id/optcontact"
+            android:title="Contact us"
+
+            />
+
+        <item
+            android:id="@+id/optionsignout"
+            android:title="Sign out"
+            />
+
+
+    </group>
+
+</menu>

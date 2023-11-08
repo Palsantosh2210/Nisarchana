@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="OpenDrawer">OpenDrawer</string>
+    <string name="CloseDrawer">CloseDrawer</string>
+</resources>
