@@ -7,8 +7,8 @@
         android:gravity="bottom">
 
         <item
-            android:id="@+id/joinus"
-            android:title="Join us"/>
+            android:id="@+id/Hiring"
+            android:title="Hiring"/>
 
         <item
             android:id="@+id/developerfarm"

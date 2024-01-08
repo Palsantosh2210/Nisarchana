@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,6 +15,84 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nisar"
         tools:targetApi="31">
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Labour"
+            android:exported="false" />
+        <activity
+            android:name=".CivilEngineer"
+            android:exported="false" />
+        <activity
+            android:name=".Bidding"
+            android:exported="false" />
+        <activity
+            android:name=".Viewmore"
+            android:exported="false" />
+        <activity
+            android:name=".Fouracres"
+            android:exported="false" />
+        <activity
+            android:name=".threeacres"
+            android:exported="false" />
+        <activity
+            android:name=".twoacres"
+            android:exported="false" />
+        <activity
+            android:name=".share"
+            android:exported="false" />
+        <activity
+            android:name=".all"
+            android:exported="false" />
+        <activity
+            android:name=".hiringlist"
+            android:exported="false" />
+        <activity
+            android:name=".Services"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".info"
+            android:exported="false" />
+        <activity
+            android:name=".sell"
+            android:exported="false" />
+        <activity
+            android:name=".Sellandbuy"
+            android:exported="false" />
+        <activity
+            android:name=".landinfo"
+            android:exported="false" />
+        <activity
+            android:name=".trend"
+            android:exported="false" />
+        <activity
+            android:name=".Popular"
+            android:exported="false" />
+        <activity
+            android:name=".newest"
+            android:exported="false" />
+        <activity
+            android:name=".twodimensional"
+            android:exported="false" />
+        <activity
+            android:name=".Hiring"
+            android:exported="false" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/launcher_icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/my_primary" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_settings" />
         <activity
             android:name=".contract"
             android:exported="false" />

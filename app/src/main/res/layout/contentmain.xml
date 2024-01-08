@@ -1,41 +1,495 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+
     android:orientation="vertical"
-    android:layout_height="match_parent"
-    >
+    android:layout_height="match_parent">
 
 
 
-    <LinearLayout
+        <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:gravity="right"
         android:background="@drawable/buildingnisar">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
 
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:queryHint="Search for items..." />
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:padding="50dp"
+        tools:src="@drawable/setting" />
+</LinearLayout>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="40dp"
+            android:src="@drawable/twodimensional" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <TextView
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="300dp"
-        android:gravity="center"
-        android:text="Working on progress....."
-        android:textAlignment="center"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:padding="40dp"
+        android:text="Categories"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right"
+        android:padding="40dp"
+        android:text="View more"
+        android:id="@+id/viewmore"
+        android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="italic" />
-
-    <Button
-        android:id="@+id/logout"
-        android:layout_marginTop="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_gravity="center"
-        android:text="Logout"/>
-
 </LinearLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="85dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="left"
+            android:padding="50dp"
+            app:srcCompat="@drawable/all" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="ALL"
+            android:textAlignment="center"
+            android:textSize="20sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="85dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="right"
+            android:padding="50dp"
+            app:srcCompat="@drawable/hireworker" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Hire Worker"
+            android:textAlignment="center"
+            android:textSize="20sp"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="85dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="right"
+            android:padding="50dp"
+            app:srcCompat="@drawable/all" />
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Land Bidding"
+            android:textAlignment="center"
+            android:textSize="20sp"></TextView>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="85dp"
+    android:layout_height="150dp"
+    android:layout_margin="10dp"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="right"
+        android:padding="50dp"
+        app:srcCompat="@drawable/all" />
+    <TextView
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="2D Model"
+        android:textAlignment="center"
+        android:textSize="20sp"></TextView></LinearLayout>
+</LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:padding="40dp"
+            android:text="Feature Product"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="italic" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:fitsSystemWindows="true"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/all"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:layout_gravity="left"
+                        android:text="All"
+                        android:textColor="@color/black"
+                        android:textColorHighlight="#111213"
+                        android:textSize="10dp"
+                        android:verticalScrollbarPosition="left" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:fitsSystemWindows="true"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/newest"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:layout_gravity="left"
+                        android:textColor="@color/black"
+                        android:text="Newest"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:fitsSystemWindows="true"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/popular"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:textColor="@color/black"
+                        android:layout_gravity="left"
+                        android:text="Popular"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="85dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:fitsSystemWindows="true"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/trend"
+                        android:layout_width="wrap_content"
+                        android:layout_height="55dp"
+                        android:layout_gravity="right"
+                        android:text="Trend"
+                        android:textColor="@color/black"
+                        android:textSize="10dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="189dp"
+                    android:layout_height="231dp"
+                    android:layout_weight="1"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="166dp"
+                        android:layout_height="212dp"
+                        android:layout_margin="10dp"
+
+                        android:fitsSystemWindows="true"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imageButton11"
+                            android:layout_width="157dp"
+                            android:layout_height="181dp"
+                            app:srcCompat="@drawable/land" />
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="1 acres Land"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+
+                        android:fitsSystemWindows="true"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imageButton12"
+                            android:layout_width="157dp"
+                            android:layout_height="181dp"
+                            app:srcCompat="@drawable/land" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="2 Acres Land"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="189dp"
+                    android:layout_height="231dp"
+                    android:layout_weight="1"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="166dp"
+                        android:layout_height="212dp"
+                        android:layout_margin="10dp"
+
+                        android:fitsSystemWindows="true"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imageButton13"
+                            android:layout_width="157dp"
+                            android:layout_height="181dp"
+                            app:srcCompat="@drawable/land" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="3 Acres Land"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+
+                        android:fitsSystemWindows="true"
+                        android:orientation="vertical">
+
+                        <ImageButton
+                            android:id="@+id/imageButton14"
+                            android:layout_width="157dp"
+                            android:layout_height="181dp"
+                            app:srcCompat="@drawable/land" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="4 Acres Land"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="113dp"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageButton7"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="left"
+                    android:padding="50dp"
+                    app:srcCompat="@drawable/home" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="116dp"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageButton8"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="left"
+                    android:padding="50dp"
+
+                    app:srcCompat="@drawable/cart"
+                    app:actionLayout="@layout/cart_action_item"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="112dp"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageButton9"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="left"
+                    android:padding="50dp"
+                    app:srcCompat="@drawable/notification" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="172dp"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/imageButton10"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="left"
+                    android:padding="50dp"
+                    app:srcCompat="@drawable/profile" />
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
 
 </ScrollView>

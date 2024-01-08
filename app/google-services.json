@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "1082399389286",
-    "project_id": "nisar-eb21b",
-    "storage_bucket": "nisar-eb21b.appspot.com"
+    "project_number": "539078848346",
+    "project_id": "nisar-c08a1",
+    "storage_bucket": "nisar-c08a1.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1082399389286:android:a31ee24ed0615f17dedfa7",
+        "mobilesdk_app_id": "1:539078848346:android:fc849b5bf846be9868cd63",
         "android_client_info": {
           "package_name": "com.example.nisar"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAStKlA4iqyzm5k_o6QI-hx_4FtldWAq1A"
+          "current_key": "AIzaSyBaE5NmUM0Za2yzEw0IupuCseys1GXiWnc"
         }
       ],
       "services": {

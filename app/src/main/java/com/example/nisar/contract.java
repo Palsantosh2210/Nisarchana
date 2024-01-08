@@ -1,31 +1,59 @@
 package com.example.nisar;
 
-import static com.razorpay.AppSignatureHelper.TAG;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
-import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
-import android.widget.Button;
-import android.widget.Toast;
-
-import com.razorpay.Checkout;
-import com.razorpay.PaymentResultListener;
-
-import org.json.JSONObject;
-
-public class contract extends AppCompatActivity implements PaymentResultListener {
-    Button pay;
+public class contract extends AppCompatActivity  {
+    TextView textview;
 
 
-    @Override
+    ImageButton Setting;
+
+        @Override
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_contract);
+
+            textview=findViewById(R.id.bidding);
+            textview.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {openActivity1();
+
+                }
+            });
+
+
+            Setting = findViewById(R.id.imageButton2);
+            Setting.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    openActivity2();
+                }
+            });
+        }
+
+    private void openActivity1() {
+        Intent intent = new Intent(contract.this, Bidding.class);
+        startActivity(intent);
+    }
+
+    private void openActivity2() {
+            Intent intent = new Intent(contract.this, SettingsActivity.class);
+            startActivity(intent);
+
+        }
+    }
+   /* @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contract);
 
-        pay = findViewById(R.id.paynow);
+        /*pay = findViewById(R.id.paynow);
 
 
         String cemail = "amarjeetvishwakarma0352@gmail.com";
@@ -73,12 +101,12 @@ public class contract extends AppCompatActivity implements PaymentResultListener
 
 
             }
-        });
+        });*/
 
 
-    }
 
-    @Override
+
+   /* @Override
     public void onPaymentSuccess(String s) {
         Toast.makeText(getApplicationContext(),"success id "+s,Toast.LENGTH_SHORT).show();
     }
@@ -86,5 +114,4 @@ public class contract extends AppCompatActivity implements PaymentResultListener
     @Override
     public void onPaymentError(int i, String s) {
         Toast.makeText(getApplicationContext(),"failure id "+s,Toast.LENGTH_SHORT).show();
-    }
-}
+    }*/

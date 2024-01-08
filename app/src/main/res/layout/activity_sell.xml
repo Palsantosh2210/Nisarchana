@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sell">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp"
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:text="Sell your Land"
+            android:layout_margin="15dp"
+            android:textAlignment="center" />
+
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            app:srcCompat="@drawable/logonisar" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:id="@+id/sellernameout"
+            android:layout_marginBottom="20dp"
+            android:hint="Area of Land "
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sellername"
+                android:inputType="textPersonName"
+
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/sellerphoneout"
+            android:layout_marginBottom="20dp"
+            android:hint="Address Of Land"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sellerphone"
+                android:inputType="textPersonName"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/sellerpriceout"
+            android:layout_marginBottom="20dp"
+            android:hint="Price for Land"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sellerprice"
+                android:inputType="phone"
+
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/sellerstateout"
+            android:layout_marginBottom="20dp"
+            android:hint="State"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sellerstate"
+                android:inputType="textPersonName"
+
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/sellerdistrictout"
+            android:layout_marginBottom="20dp"
+            android:hint="District"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sellerdistrict"
+                android:inputType="textPersonName"
+
+
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+    <TextView
+        android:id="@+id/Image_tag"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_gravity="left|fill_horizontal"
+        android:layout_marginLeft="65dp"
+
+        android:text="select an image "
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <Button
+            android:id="@+id/button_choose_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Image_tag"
+            android:layout_marginTop="20dp"
+            android:text="choose Image" />
+    <!--Button for uploading image-->
+    <Button
+        android:id="@+id/upload"
+        android:text="Upload"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="350dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button_choose_image"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/Description"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-4dp" />
+
+</LinearLayout>
+        <ImageView
+            android:id="@+id/imgView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <Button
+            android:id="@+id/sell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_margin="20dp"
+            android:text="Sell" />
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>
