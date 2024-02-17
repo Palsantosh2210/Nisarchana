@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">Nisarchana</string>
     <string name="select">Engineering/Labour</string>
+    <string name="select1">Structuretype</string>
+    <string name="select2">Flood</string>
     <string name="OpenDrawer">OpenDrawer</string>
     <string name="CloseDrawer">CloseDrawer</string>
     <string name="title_activity_settings">SettingsActivity</string>

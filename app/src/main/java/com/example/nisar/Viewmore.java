@@ -3,12 +3,12 @@ package com.example.nisar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Viewmore extends AppCompatActivity {
-    ImageButton twod,bidding,calamities,hireworker;
+    ImageView twod,bidding,calamities,hireworker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,8 +57,8 @@ public class Viewmore extends AppCompatActivity {
     }
 
     private void openActivity5() {
-       // Intent intent = new Intent(Viewmore.this, Fouracres.class);
-        //startActivity(intent);
+        Intent intent = new Intent(Viewmore.this, ml.class);
+        startActivity(intent);
     }
 
     private void openActivity2() {

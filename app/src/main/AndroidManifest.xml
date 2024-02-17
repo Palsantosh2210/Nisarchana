@@ -4,6 +4,10 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -14,9 +18,18 @@
         android:roundIcon="@drawable/logonisar"
         android:supportsRtl="true"
         android:theme="@style/Theme.Nisar"
-        tools:targetApi="31">
+        tools:targetApi="34">
         <activity
-            android:name=".CartActivity"
+            android:name=".image1"
+            android:exported="false" />
+        <activity
+            android:name=".ml"
+            android:exported="false" />
+        <activity
+            android:name=".sellerresult"
+            android:exported="false" />
+        <activity
+            android:name=".civilengiresult"
             android:exported="false" />
         <activity
             android:name=".Labour"
@@ -59,6 +72,9 @@
             android:exported="false" />
         <activity
             android:name=".sell"
+            android:exported="false" />
+        <activity
+            android:name=".farmresult"
             android:exported="false" />
         <activity
             android:name=".Sellandbuy"

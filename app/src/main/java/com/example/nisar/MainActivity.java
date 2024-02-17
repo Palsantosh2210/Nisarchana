@@ -7,7 +7,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
-import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -25,10 +25,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
-
-        private SearchView searchView;
-        private ListView listView;
-
+    SearchView searchView;
+    ListView listView;
+    labouradapter labouradapter;
 
     Button all;
     Button newest;
@@ -45,21 +44,21 @@ public class MainActivity extends AppCompatActivity {
     private long pressedtime;
     String userId;
 
-    ImageButton Setting;
-    ImageButton Home;
+    ImageView Setting;
+    ImageView Home;
 
-    ImageButton twodimensional;
+    ImageView twodimensional;
 
-    ImageButton All;
+    ImageView All;
 
-    ImageButton Twod;
-    ImageButton LandBidding;
-    ImageButton Hireworker;
-    ImageButton F_all;
+    ImageView Twod;
+    ImageView LandBidding;
+    ImageView Hireworker;
+    ImageView F_all;
 
-    ImageButton Land;
-    ImageButton Bidding;
-    ImageButton Profile;
+    ImageView Land;
+    ImageView Bidding;
+    ImageView Profile;
     TextView textview;
 
     @Override
@@ -68,9 +67,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         searchView = findViewById(R.id.search_view);
+        searchView.clearFocus();
         listView = findViewById(R.id.list_view);
         String[] items = {
-                "land", "Banana", "Cherry", "Date", "Fig", "Grape", "Kiwi", "Lemon", "Mango",
+                "land", "Acres", "Cherry", "Date", "Fig", "Grape", "Kiwi", "Lemon", "Mango",
                 "Orange", "Papaya", "Peach", "Pear", "Pineapple", "Plum", "Raspberry", "Strawberry",
                 "Tangerine", "Watermelon"
         };
@@ -100,7 +100,7 @@ public class MainActivity extends AppCompatActivity {
         Setting.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               openActivity2();
+                openActivity2();
             }
         });
 
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
         Home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-            openActivity1();
+                openActivity1();
             }
         });
 
@@ -197,24 +197,19 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-      all = findViewById(R.id.all);
-      newest = findViewById(R.id.newest);
-      popular = findViewById(R.id.popular);
-      trend = findViewById(R.id.trend);
+        all = findViewById(R.id.all);
+        newest = findViewById(R.id.newest);
+        popular = findViewById(R.id.popular);
+        trend = findViewById(R.id.trend);
 
         firebaseAuth = FirebaseAuth.getInstance();
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseFirestore = FirebaseFirestore.getInstance();
 
-
-
-
         drawerLayout = findViewById(R.id.drawer);
         navigationView = findViewById(R.id.navview);
         toolbar = findViewById(R.id.toolar);
-
-
 
         setSupportActionBar(toolbar);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.OpenDrawer,R.string.CloseDrawer);
@@ -310,7 +305,7 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 else if(id == R.id.Hiring){
-                    startActivity(new Intent(getApplicationContext(),Hiring.class));
+                    startActivity(new Intent(getApplicationContext(),hiringlist.class));
 
                 }
 
@@ -375,8 +370,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openActivity1() {
-            Intent intent = new Intent(MainActivity.this, MainActivity.class);
-            startActivity(intent);
+        Intent intent = new Intent(MainActivity.this, MainActivity.class);
+        startActivity(intent);
 
     }
 
@@ -398,7 +393,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
     private void openActivity7() {
-        Intent intent = new Intent(MainActivity.this, hiringlist.class);
+        Intent intent = new Intent(MainActivity.this, Labour.class);
         startActivity(intent);
 
     }

@@ -1,105 +1,100 @@
 package com.example.nisar;
 
-
-
 public class modelfar {
+    String age, district, education, email, engineeringLabour,experience,image,name, phone,state;
+    public  modelfar(){
 
-    String farmername,farmerphone,farmeremail,farmerage,farmercropname,farmerquantity,farmerstate,farmerdistrict,farmerprice,farmertotalprice;
+    }
+    public modelfar(String age, String district, String education, String email, String engineeringLabour, String experience,String image, String name, String phone, String state ){
+        this.age = age;
+        this.district = district;
+        this.education = education;
+        this.email = email;
+        this.engineeringLabour = engineeringLabour;
+        this.experience = experience;
+        this.image=image;
+        this.name = name;
+        this.phone = phone;
+        this.state = state;
 
-    public modelfar() {
+
     }
 
-
-    public modelfar(String farmername, String farmerphone, String farmeremail, String farmerage, String farmercropname, String farmerquantity, String farmerstate, String farmerdistrict, String farmerprice, String farmertotalprice) {
-        this.farmername = farmername;
-        this.farmerphone = farmerphone;
-        this.farmeremail = farmeremail;
-        this.farmerage = farmerage;
-        this.farmercropname = farmercropname;
-        this.farmerquantity = farmerquantity;
-        this.farmerstate = farmerstate;
-        this.farmerdistrict = farmerdistrict;
-        this.farmerprice = farmerprice;
-        this.farmertotalprice = farmertotalprice;
+    public String getAge() {
+        return age;
     }
 
-    public String getFarmername() {
-        return farmername;
+    public void setAge(String age) {
+        this.age = age;
     }
 
-    public void setFarmername(String farmername) {
-        this.farmername = farmername;
+    public String getDistrict() {
+        return district;
     }
 
-    public String getFarmerphone() {
-        return farmerphone;
+    public void setDistrict(String district) {
+        this.district = district;
     }
 
-    public void setFarmerphone(String farmerphone) {
-        this.farmerphone = farmerphone;
+    public String getEducation() {
+        return education;
     }
 
-    public String getFarmeremail() {
-        return farmeremail;
+    public void setEducation(String education) {
+        this.education = education;
     }
 
-    public void setFarmeremail(String farmeremail) {
-        this.farmeremail = farmeremail;
+    public String getEmail() {
+        return email;
     }
 
-    public String getFarmerage() {
-        return farmerage;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public void setFarmerage(String farmerage) {
-        this.farmerage = farmerage;
+    public String getEngineeringLabour() {
+        return engineeringLabour;
     }
 
-    public String getFarmercropname() {
-        return farmercropname;
+    public void setEngineeringLabour(String engineeringLabour) {
+        this.engineeringLabour = engineeringLabour;
     }
 
-    public void setFarmercropname(String farmercropname) {
-        this.farmercropname = farmercropname;
+    public String getExperience() {
+        return experience;
     }
 
-    public String getFarmerquantity() {
-        return farmerquantity;
+    public void setExperience(String experience) {
+        this.experience = experience;
+    }
+    public String getImage() {
+        return image;
     }
 
-    public void setFarmerquantity(String farmerquantity) {
-        this.farmerquantity = farmerquantity;
+    public void setImage(String image) {
+        this.image = image;
+    }
+    public String getName() {
+        return name;
     }
 
-    public String getFarmerstate() {
-        return farmerstate;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public void setFarmerstate(String farmerstate) {
-        this.farmerstate = farmerstate;
+    public String getPhone() {
+        return phone;
     }
 
-    public String getFarmerdistrict() {
-        return farmerdistrict;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
-    public void setFarmerdistrict(String farmerdistrict) {
-        this.farmerdistrict = farmerdistrict;
+    public String getState() {
+        return state;
     }
 
-    public String getFarmerprice() {
-        return farmerprice;
-    }
-
-    public void setFarmerprice(String farmerprice) {
-        this.farmerprice = farmerprice;
-    }
-
-    public String getFarmertotalprice() {
-        return farmertotalprice;
-    }
-
-    public void setFarmertotalprice(String farmertotalprice) {
-        this.farmertotalprice = farmertotalprice;
+    public void setState(String state) {
+        this.state = state;
     }
 }

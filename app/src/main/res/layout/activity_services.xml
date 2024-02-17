@@ -42,7 +42,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/boopm23"
             android:textSize="18sp"
-            android:text="Pradhani Fasal Bima Yojana"/>
+            android:text="E-shram Construction"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
             android:layout_height="wrap_content"
             android:id="@+id/buoopm"
             android:textSize="18sp"
-            android:text="PM KISAN SAMMAN NIDHI"/>
+            android:text="Construction Worker welfare"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -72,9 +72,78 @@
             android:layout_height="wrap_content"
             android:id="@+id/pmtmmpm"
             android:textSize="18sp"
-            android:text="Agri infrastructure Fund"/>
+            android:text="Construction Workers Child Education Yojanas"/>
 
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:text="Pm  "
+            android:id="@+id/pm4"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/boopm4"
+            android:textSize="18sp"
+            android:text="Model Welfare Scheme"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:text="Pm  "
+            android:id="@+id/pm5"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/boopm5"
+            android:textSize="18sp"
+            android:text="State Welfare board Scheme"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:text="Pm  "
+            android:id="@+id/pm6"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/boopm6"
+            android:textSize="18sp"
+            android:text="Building Construction Scheme"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:text="Pm  "
+            android:id="@+id/pm7"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/boopm7"
+            android:textSize="18sp"
+            android:text="women labour"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:text="Pm  "
+            android:id="@+id/pm8"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/boopm8"
+            android:textSize="18sp"
+            android:text="Assistant accident counstuction scheme"/>
 
     </LinearLayout>
 

@@ -11,9 +11,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class Services extends AppCompatActivity {
 
-    TextView pm1,pm2,pm3;
+    TextView pm1,pm2,pm3,pm4,pm5,pm6,pm7,pm8;
 
-    Button bupm1,bupm2,bupm3;
+    Button bupm1,bupm2,bupm3,bupm4,bupm5,bupm6,bupm7,bupm8;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,36 +23,80 @@ public class Services extends AppCompatActivity {
         pm1 = findViewById(R.id.pmk);
         pm2 = findViewById(R.id.pm123);
         pm3 = findViewById(R.id.pmtm12);
+        pm4=findViewById(R.id.pm4);
+        pm5=findViewById(R.id.pm5);
+        pm6=findViewById(R.id.pm6);
+        pm7=findViewById(R.id.pm7);
+        pm8=findViewById(R.id.pm8);
         bupm1= findViewById(R.id.boopm23);
         bupm2= findViewById(R.id.buoopm);
         bupm3= findViewById(R.id.pmtmmpm);
+        bupm4=findViewById(R.id.boopm4);
+        bupm5=findViewById(R.id.boopm5);
+        bupm6=findViewById(R.id.boopm6);
+        bupm7=findViewById(R.id.boopm7);
+        bupm8=findViewById(R.id.boopm8);
 
-        pm1.setText("Pradhan Mantri Fasal Bima Yojana (PMFBY) scheme was launched in India by Ministry of Agriculture & Farmers welfare, New Delhi from Kharif 2016 season onwards. National Insurance Company started participating in PMFBY from Rabi 2016 onwards and covered 8 States and 2 Union Territories during the past 5 seasons namely, Rabi 2016-17, Kharif & Rabi 2017 and Kharif & Rabi 2018 covering 70,27,637 farmers. Farmers share of premium is Rs. 453 crores and with subsidy from State/Central Govts RS.1909 Crores, gross Premium is Rs.2362 Crores for the 5 seasons together. Whilst the claims of Kharif 18 and Rabi 18 are under process, we have closed the first 3 seasons with a gross premium amount of Rs.1804 Crores collected from 35,22,616 farmers and claims to the tune of Rs.1703 crores were paid, by which 17,66,455 no of farmers benefited, which shows almost 50% of the farmers insured were benefitted.");
-        pm2.setText("The Pradhan Mantri Kisan Samman Nidhi Yojana (PM-Kisan Yojana) is a government scheme through which, all small and marginal farmers will get up to Rs 6,000 per year as minimum income support. This 75,000-crore scheme aims to cover 125 million farmers, irrespective of the size of their landholding in India.");
-        pm3.setText("Agriculture Infrastructure Fund Scheme is a top-up scheme along with all other available state and central government schemes. Any grant or subsidy available under any present or future scheme of Central/State government can be availed for projects in addition to this financing facility.");
 
+        pm1.setText("E-SHRAM, Construction Sites (Palghar)");
+        pm2.setText("Maharashtra Building and Other Construction Worker Welfare");
+        pm3.setText("Construction Workers Child Education Yojanas");
+        pm4.setText("Model Welfare Scheme for Building and Other Construction Workers and Action Plan for Strengthening Implementation Machinery");
+        pm5.setText("State Welfare Boards for Building and Other Construction Workers (BOCW)");
+        pm6.setText("Building and Other Construction Workers (BOCW)");
+        pm7.setText("For Women Labour");
+        pm8.setText("Assistance Scheme for Construction Worker in Case of General or Accidental Death or Injury");
 
         bupm1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoUrl("https://pmfby.gov.in/");
+                gotoUrl("https://palghar.gov.in/en/notice_category/welfare-schemes/");
             }
         });
 
         bupm2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoUrl("https://pmkisan.gov.in/RegistrationFormnew.aspx");
+                gotoUrl("https://mahabocw.in/mr/%E0%A4%95%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%A3%E0%A4%95%E0%A4%BE%E0%A4%B0%E0%A5%80-%E0%A4%AF%E0%A5%8B%E0%A4%9C%E0%A4%A8%E0%A4%BE/");
             }
         });
 
         bupm3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                gotoUrl("https://vikaspedia.in/schemesall/schemes-for-farmers/agriculture-infrastructure-fund");
+                gotoUrl("https://www.myscheme.gov.in/schemes/nsky");
             }
         });
-
+        bupm4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://labour.gov.in/whatsnew/model-welfare-scheme-building-and-other-construction-workers-and-action-plan-strengthening");
+            }
+        });
+        bupm5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.insightsonindia.com/2021/03/26/state-welfare-boards-for-building-and-other-construction-workers-bocw/");
+            }
+        });
+        bupm6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://upvesd.gov.in/en/article/building-other-construction-workers-scheme-(bocw)");
+            }
+        });
+        bupm7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://labour.gov.in/womenlabour/about-women-labour");
+            }
+        });
+        bupm8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoUrl("https://www.myscheme.gov.in/schemes/asfcw");
+            }
+        });
 
     }
 

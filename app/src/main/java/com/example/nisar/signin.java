@@ -8,7 +8,6 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -36,8 +35,8 @@ import java.util.Map;
 import java.util.concurrent.TimeUnit;
 public class signin extends AppCompatActivity {
     public static final String TAG = "TAG";
-    TextInputEditText Name, Phone, Emails, Passwords, Confpass;
-    TextInputLayout Nameh, Phoneh, Emailsh, Passwordsh, Confpassh;
+    TextInputEditText Name, Phone, Emails, Passwords, Confpass,Otp;
+    TextInputLayout Nameh, Phoneh, Emailsh, Passwordsh, Confpassh,Otph;
     Button Signin;
     TextView Login;
     ProgressDialog progressDialog;
@@ -50,7 +49,7 @@ public class signin extends AppCompatActivity {
 
     // variable for our text input
     // field for phone and OTP.
-    private EditText edtPhone, edtOTP;
+   // private EditText edtPhone, edtOTP;
 
     // buttons for generating OTP and verifying OTP
     private Button verifyOTPBtn, generateOTPBtn;
@@ -69,8 +68,8 @@ public class signin extends AppCompatActivity {
         //firebaseAuth = FirebaseAuth.getInstance();
 
         // initializing variables for button and Edittext.
-        edtPhone = findViewById(R.id.idEdtPhoneNumber);
-        edtOTP = findViewById(R.id.idEdtOtp);
+        //edtPhone = findViewById(R.id.idEdtPhoneNumber);
+        Otp = findViewById(R.id.idEdtOtp);
         verifyOTPBtn = findViewById(R.id.idBtnVerify);
         generateOTPBtn = findViewById(R.id.idBtnGetOtp);
 
@@ -87,7 +86,7 @@ public class signin extends AppCompatActivity {
         Confpass = findViewById(R.id.confpasssignin);
         Signin = findViewById(R.id.buttonsign);
         Login = findViewById(R.id.textViewsign);
-
+        Otph=findViewById(R.id.idEdtOtph);
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseFirestore = FirebaseFirestore.getInstance();
 
@@ -194,14 +193,14 @@ public class signin extends AppCompatActivity {
             public void onClick(View v) {
                 // below line is for checking whether the user
                 // has entered his mobile number or not.
-                if (TextUtils.isEmpty(edtPhone.getText().toString())) {
+                if (TextUtils.isEmpty(Phone.getText().toString())) {
                     // when mobile number text field is empty
                     // displaying a toast message.
                     Toast.makeText(signin.this, "Please enter a valid phone number.", Toast.LENGTH_SHORT).show();
                 } else {
                     // if the text field is not empty we are calling our
                     // send OTP method for getting OTP from Firebase.
-                    String phone = "+91" + edtPhone.getText().toString();
+                    String phone = "+91" + Phone.getText().toString();
                     sendVerificationCode(phone);
                 }
             }
@@ -213,14 +212,14 @@ public class signin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // validating if the OTP text field is empty or not.
-                if (TextUtils.isEmpty(edtOTP.getText().toString())) {
+                if (TextUtils.isEmpty(Otp.getText().toString())) {
                     // if the OTP text field is empty display
                     // a message to user to enter OTP
                     Toast.makeText(signin.this, "Please enter OTP", Toast.LENGTH_SHORT).show();
                 } else {
                     // if OTP field is not empty calling
                     // method to verify the OTP.
-                    verifyCode(edtOTP.getText().toString());
+                    verifyCode(Otp.getText().toString());
                 }
             }
         });
@@ -236,9 +235,10 @@ public class signin extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             // if the code is correct and the task is successful
                             // we are sending our user to new activity.
-                            Intent i = new Intent(signin.this, contentmain.class);
+                            /*Intent i = new Intent(signin.this, signin.class);
                             startActivity(i);
-                            finish();
+                            finish();*/
+                            Toast.makeText(signin.this, "Phone Number Verified", Toast.LENGTH_SHORT).show();
                         } else {
                             // if the code is not correct then we are
                             // displaying an error message to the user.
@@ -295,7 +295,7 @@ public class signin extends AppCompatActivity {
                 // if the code is not null then
                 // we are setting that code to
                 // our OTP edittext field.
-                edtOTP.setText(code);
+                Otp.setText(code);
 
                 // after setting this code
                 // to OTP edittext field we
@@ -323,9 +323,6 @@ public class signin extends AppCompatActivity {
         // calling sign in method.
         signInWithCredential(credential);
     }
-
-
-
 
 }
 
