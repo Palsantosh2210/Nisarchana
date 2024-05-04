@@ -376,7 +376,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void openActivity3() {
-        Intent intent = new Intent(MainActivity.this, twodimensional.class);
+        Intent intent = new Intent(MainActivity.this, ml.class);
         startActivity(intent);
 
     }
@@ -402,7 +402,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
     private void openActivity9() {
-        Intent intent = new Intent(MainActivity.this, twodimensional.class);
+        Intent intent = new Intent(MainActivity.this, ml.class);
         startActivity(intent);
     }
     @Override

@@ -3,6 +3,10 @@
     <string name="select">Engineering/Labour</string>
     <string name="select1">Structuretype</string>
     <string name="select2">Flood</string>
+    <string name="select3">Soil type</string>
+    <string name="select4">Region</string>
+    <string name="select5">Capabilities</string>
+    <string name="select6">Rock type</string>
     <string name="OpenDrawer">OpenDrawer</string>
     <string name="CloseDrawer">CloseDrawer</string>
     <string name="title_activity_settings">SettingsActivity</string>

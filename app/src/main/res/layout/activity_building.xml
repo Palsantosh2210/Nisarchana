@@ -1,19 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".twodimensional">
-
-
-
+    tools:context=".building">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="20dp"
-        android:paddingBottom="10dp"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
@@ -21,8 +19,7 @@
             android:text="Side View"
             android:textSize="20sp"
             android:textStyle="bold"
-            android:layout_gravity="center"
-            />
+            android:layout_gravity="center"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="200dp"
@@ -35,9 +32,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="textview"
-                    android:id="@+id/t2"
                     android:textSize="12sp"
                     android:textStyle="bold"
+                    android:id="@+id/t1"
                     android:layout_gravity="center" />
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -48,55 +45,57 @@
                         android:layout_height="wrap_content"
                         android:text="textview"
                         android:textSize="12sp"
-                        android:id="@+id/t1"
+                        android:id="@+id/t2"
                         android:textStyle="bold"
                         android:layout_gravity="center"
                         android:rotation="90"/>
                     <ImageView
                         android:layout_width="320dp"
                         android:layout_height="match_parent"
-                        android:id="@+id/side"
-                        android:src="@drawable/logonisar"/>
+                        android:src="@drawable/sbuilding"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Textview"
                         android:textSize="12sp"
-                        android:id="@+id/t3"
                         android:textStyle="bold"
+                        android:id="@+id/t3"
                         android:layout_gravity="center"
                         android:rotation="90"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
-
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginRight="170dp"
-                android:text="roate by ++"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="rotate by --"/>
-
-        </LinearLayout>
-
-        <TextView
-
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Front View"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="+"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            android:id="@+id/b1"/>
 
-
+            <Button
+                android:id="@+id/b2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="-"
+                android:textStyle="bold"
+                android:layout_margin="50dp"
+                android:textAlignment="center"
+                android:textSize="20sp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Front View"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        />
         <LinearLayout
             android:layout_width="match_parent"
             android:paddingTop="30dp"
@@ -116,14 +115,13 @@
                         android:layout_gravity="center"
                         android:rotation="90"
                         android:text="Textview"
-                        android:id="@+id/t4"
                         android:textSize="12sp"
+                        android:id="@+id/t4"
                         android:textStyle="bold"/>
                     <ImageView
                         android:layout_width="320dp"
                         android:layout_height="match_parent"
-                        android:id="@+id/front"
-                        android:src="@drawable/logonisar"/>
+                        android:src="@drawable/fbuilding"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -143,22 +141,6 @@
                     android:textStyle="bold"
                     android:layout_gravity="center"/>
             </LinearLayout>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginRight="170dp"
-                android:text="roate by ++"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="rotate by --"/>
-
         </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
@@ -193,15 +175,14 @@
                     <ImageView
                         android:layout_width="320dp"
                         android:layout_height="match_parent"
-                        android:id="@+id/ground"
-                        android:src="@drawable/logonisar"/>
+                        android:src="@drawable/gview"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Textview"
                         android:textSize="12sp"
+                        android:id="@+id/t8"
                         android:textStyle="bold"
-                        android:id="@+id/t9"
                         android:layout_gravity="center"
                         android:rotation="90"/>
                 </LinearLayout>
@@ -209,41 +190,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="textview"
+                    android:id="@+id/t9"
                     android:textSize="15sp"
                     android:textStyle="bold"
-                    android:id="@+id/t8"
                     android:layout_gravity="center"/>
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal">
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_marginRight="170dp"
-                        android:text="roate by ++"/>
-
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:text="rotate by --"/>
-
-                </LinearLayout>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="hello"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:gravity="center"
-                    android:layout_gravity="center"
-                    android:id="@+id/t10"/>
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-
-
-
-
+</LinearLayout>
 </ScrollView>

@@ -84,99 +84,127 @@
         android:textSize="20dp"
         android:textStyle="italic" />
 </LinearLayout>
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent">
 
-    <LinearLayout
-        android:layout_width="85dp"
-        android:layout_height="150dp"
-        android:layout_margin="10dp"
-
-        android:fitsSystemWindows="true"
-        android:orientation="vertical">
-
-        <ImageView
+        <ScrollView
             android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:id="@+id/imageButton3"
-            android:src="@drawable/a1"/>
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="ALL"
-            android:textAlignment="center"
-            android:textSize="20sp"></TextView>
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="85dp"
-        android:layout_height="150dp"
-        android:layout_margin="10dp"
-        android:fitsSystemWindows="true"
-        android:orientation="vertical">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:id="@+id/imageButton4"
-            android:src="@drawable/c"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
 
-        <TextView
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Hire Worker"
-            android:textAlignment="center"
-            android:textSize="20sp"></TextView>
-    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    >
 
-    <LinearLayout
-        android:layout_width="85dp"
-        android:layout_height="150dp"
-        android:layout_margin="10dp"
-        android:fitsSystemWindows="true"
-        android:orientation="vertical">
+                    <LinearLayout
+                        android:layout_width="85dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_gravity="center"
-            android:id="@+id/imageButton5"
-            android:src="@drawable/bid1"/>
+                        android:fitsSystemWindows="true"
+                        android:orientation="vertical">
 
-        <TextView
-            android:layout_width="90dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Land Bidding"
-            android:textAlignment="center"
-            android:textSize="20sp"></TextView>
-    </LinearLayout>
-<LinearLayout
-    android:layout_width="85dp"
-    android:layout_height="150dp"
-    android:layout_margin="10dp"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:id="@+id/imageButton6"
-        android:layout_gravity="center"
-        android:src="@drawable/tw1"/>
-    <TextView
-        android:layout_width="90dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="2D Model"
-        android:textAlignment="center"
-        android:textSize="20sp"></TextView>
-</LinearLayout>
-</LinearLayout>
+                        <ImageView
+                            android:id="@+id/imageButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/a1" />
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="ALL"
+                            android:textAlignment="center"
+                            android:textSize="20sp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:fitsSystemWindows="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:src="@drawable/c" />
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Hire Worker"
+                            android:textAlignment="center"
+                            android:textSize="20sp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:fitsSystemWindows="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/bid1" />
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="Land Bidding"
+                            android:textAlignment="center"
+                            android:textSize="20sp"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="85dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        android:fitsSystemWindows="true"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageButton6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/tw1" />
+
+                        <TextView
+                            android:layout_width="90dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:text="2D Model"
+                            android:textAlignment="center"
+                            android:textSize="20sp"></TextView>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+            </ScrollView>
+        </ScrollView>
 
         <TextView
             android:layout_width="match_parent"
@@ -188,9 +216,20 @@
             android:textSize="20dp"
             android:textStyle="italic" />
 
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="85dp"
@@ -207,7 +246,7 @@
                         android:text="All"
                         android:textColor="@color/black"
                         android:textColorHighlight="#111213"
-                        android:textSize="10dp"
+                        android:textSize="10sp"
                         android:verticalScrollbarPosition="left" />
                 </LinearLayout>
 
@@ -225,7 +264,7 @@
                         android:layout_gravity="left"
                         android:textColor="@color/black"
                         android:text="Newest"
-                        android:textSize="10dp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -242,7 +281,7 @@
                         android:textColor="@color/black"
                         android:layout_gravity="left"
                         android:text="Popular"
-                        android:textSize="10dp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -259,10 +298,12 @@
                         android:layout_gravity="right"
                         android:text="Trend"
                         android:textColor="@color/black"
-                        android:textSize="10dp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
             </LinearLayout>
+        </LinearLayout>
+</ScrollView>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -409,10 +450,14 @@
 
 
             </LinearLayout>
-
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
             <LinearLayout
                 android:layout_width="113dp"
@@ -437,7 +482,6 @@
                     android:layout_height="50dp"
                     android:layout_gravity="left"
                     android:padding="50dp"
-
                     app:srcCompat="@drawable/mess"
 
                     />
@@ -472,7 +516,7 @@
 
 
         </LinearLayout>
-
+</ScrollView>
         </LinearLayout>
 
 </ScrollView>

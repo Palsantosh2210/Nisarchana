@@ -1,6 +1,7 @@
 package com.example.nisar;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -12,7 +13,7 @@ import com.squareup.picasso.Picasso;
 
 public class farmresult extends AppCompatActivity  {
     TextView cropnamere, cropquantityre, croppricere, croptotalpricere, cropfarnamere, cropemailre, cropphonere, cropdistrictre, cropstatere;
-    Button paybtn;
+    Button callb;
     ImageView img;
     String c;
 
@@ -44,7 +45,7 @@ public class farmresult extends AppCompatActivity  {
         cropphonere = findViewById(R.id.cropphonere);
         cropdistrictre = findViewById(R.id.cropdistrictre);
         cropstatere = findViewById(R.id.cropstatere);
-        paybtn = findViewById(R.id.paytn);
+        callb = findViewById(R.id.call);
         img = findViewById(R.id.imgv);
 
         Intent intent1 = getIntent();
@@ -75,6 +76,21 @@ public class farmresult extends AppCompatActivity  {
             Picasso.get().load(c).into(img);
         }
 
+
+
+        callb.setOnClickListener(arg -> {
+            // getting phone number from edit text and changing it to String
+            String phone_number = "7304284215";
+
+            // Getting instance of Intent with action as ACTION_CALL
+            Intent phone_intent = new Intent(Intent.ACTION_CALL);
+
+            // Set data of Intent through Uri by parsing phone number
+            phone_intent.setData(Uri.parse("tel:" + phone_number));
+
+            // start Intent
+            startActivity(phone_intent);
+        });
 
 
       /*  String amount = ctotalprice + "00";

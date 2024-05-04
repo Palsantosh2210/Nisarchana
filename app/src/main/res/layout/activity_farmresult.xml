@@ -130,7 +130,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/paytn"
+            android:id="@+id/call"
             android:text="Call"
             android:layout_gravity="center"
             android:textStyle="bold"/>
